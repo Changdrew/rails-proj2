@@ -1,14 +1,13 @@
 Rails.application.routes.draw do
-  resources :comments
-  resources :comments
+  
   devise_for :users
   get 'pages/info'
-
+  
+  resources :comments
   resources :interests
   resources :ideas
   resources :events
   get 'welcome/index'
-  get "pages/info"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
