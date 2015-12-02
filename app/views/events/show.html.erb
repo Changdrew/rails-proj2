@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+
+<h3>
+  <strong> <%= @event.title %> </strong>
+</h3>
+
+<p>
+  <strong>Address:</strong>
+  <%= @event.address %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @event.description %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @event.time.strftime("%I:%M %p") %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @event.date.strftime("%B %d, %Y")  %>
+</p>
+
+<p>
+  <%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@event.latitude}%2C#{@event.longitude}" %>
+</p>
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>
