@@ -1,0 +1,19 @@
+
+
+<p>
+  <strong>Name:</strong>
+  <%= @interest.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @interest.description %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= image_tag(@interest.picture_url, :width => 600) if @interest.picture.present? %>
+</p>
+
+<%= link_to 'Edit', edit_interest_path(@interest) %> |
+<%= link_to 'Back', interests_path %>

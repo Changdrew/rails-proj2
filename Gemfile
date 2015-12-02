@@ -45,5 +45,7 @@ group :development do
   gem 'spring'
   gem 'geocoder'
   gem 'pickadate-rails'
+  gem 'devise'
+  gem 'carrierwave'
 end
 
