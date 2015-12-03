@@ -1,4 +1,6 @@
-
+<div class="container bs-docs-container">
+<div class="row">
+<div class="col-md-9" role="main">
 <h3>
   <strong> <%= @event.title %> </strong>
 </h3>
@@ -35,8 +37,13 @@
     <p><%= comment.body %></p>
     <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
   </div>
+  <br>
 <% end %>
 <%= render 'comments/form' %>
 
+<br>
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>
+</div>
+</div>
+</div>
