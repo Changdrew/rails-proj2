@@ -68,7 +68,8 @@
                 <h1>Flock together with people of similar interests!</h1>
                 <hr>
                 <p><font color="#000000">Attend events that align with your interests and meet others who have similar passions.</font></p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Login Here!</a>
+                <!-- <a href="#about" class="btn btn-primary btn-xl page-scroll">Login Here!</a> -->
+                <%= link_to "Login Here!", new_user_session_path, :class => 'btn btn-primary btn-xl page-scroll' %>
             </div>
         </div>
     </header>
@@ -81,7 +82,8 @@
                     <h2 class="section-heading">Don't have an account?</h2>
                     <hr class="light">
                     <p class="text-faded">Create an account to see which events are happening near you!</p>
-                    <a href="#" class="btn btn-default btn-xl">Sign Up</a>
+                    <!-- <a href="#" class="btn btn-default btn-xl">Sign Up</a> -->
+                    <%= link_to "Sign Up", new_user_registration_path, :class => 'btn btn-default btn-xl' %>
                 </div>
             </div>
         </div>
