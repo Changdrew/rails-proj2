@@ -19,3 +19,4 @@
 //= require pickadate/picker.date
 //= require pickadate/picker.time
 //= require pickadate/translations/bg_BG
+//= require bootstrap
