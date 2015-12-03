@@ -1,4 +1,4 @@
-
+<% if not user_signed_in? %>
 <!-- <!DOCTYPE html>
 <html>
 <head>
@@ -131,3 +131,29 @@
     <script src="../../../assets/javascripts//creative.js"></script>
 
 </body>
+
+<% else %>
+
+
+<section class="bg-primary" id="about">
+      <body style="background-color:white;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Select an option</h2>
+                    <hr class="light">
+                    <!-- <a href="#" class="btn btn-default btn-xl">Sign Up</a> -->
+                    <%= link_to "add an interest", new_interest_path, :class => 'btn btn-default btn-xl' %>
+                    <%= link_to "create an event", new_event_path, :class => 'btn btn-default btn-xl' %>
+                    <%= link_to "upcoming events", events_path, :class => 'btn btn-default btn-xl' %>
+                    
+                </div>
+            </div>
+        </div>
+      </body>
+    </section>
+
+
+<% end %>
+
+
