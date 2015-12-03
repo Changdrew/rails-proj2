@@ -54,6 +54,7 @@ group :development do
   gem 'geocoder'
   gem 'pickadate-rails'
   gem 'devise'
+  gem 'gravtastic'
   gem 'carrierwave'
 end
 
