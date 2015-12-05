@@ -1,6 +1,6 @@
 Title: Flockr
 Team Members: Andrew Chang, Da Hyun Lee, Mason Scott, Kevin Shi
-Demo Link: 
+Demo Link: https://railsflockr.herokuapp.com/
 
 Idea: An application where users can meet up at events with other users that share similar interests and hobbies. 
 
