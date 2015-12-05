@@ -5,3 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+  Interest.create(name: 'Photography', description: 'Come share our love for photography!', picture: 'photo.jpeg')
